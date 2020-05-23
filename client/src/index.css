@@ -1,0 +1,87 @@
+@import url('~normalize.css');
+@import url('./assets/icomoon/icomoon.css');
+
+@font-face {  /*подключение шрифта*/
+	font-family: 'Montserrat';
+	src: url("./assets/fonts/Montserrat-Bold.ttf") format('truetype');
+	src: url("./assets/fonts/Montserrat-Light.ttf") format('truetype');
+	src: url("./assets/fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 1px 15px;
+	margin: 0 auto;
+}
+.title {
+	text-align: center;
+}
+
+.title > h2 {
+	background-image: linear-gradient(39deg, #36acff 30%, #3564fc 70%);
+	background-clip: text;
+	font-family: Lato;
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 35px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	margin-bottom: 20px;
+	padding: 5px;
+	display: inline-block;
+	margin-top: 0;
+	line-height: 40px;
+}
+
+.btn {
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	border-radius: 28px;
+	overflow: hidden;
+}
+
+.btn::after {
+	position: absolute;
+	content: '';
+	height: 65px;
+	width: 30px;
+	background-image: linear-gradient(90deg, rgba(255,255,255,1) -6%, rgba(0,0,0,0.4)70%);
+	left: -39px;
+	top: -5px;
+	transform: rotate(15deg);
+	transition: all .3s;
+}
+
+.btn:hover:after {
+	left: 215px;
+}
+
+.btn > a {
+	display: inline-block;
+	width: 204px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffffff;
+	border-radius: 28px;
+	color: #3695ff;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	font-weight: bold;
+	padding-top: 4px;
+}

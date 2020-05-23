@@ -1,0 +1,145 @@
+.footer {
+	min-height: 250px;
+	background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	&::before {
+		position:absolute;
+		z-index: 2; 
+		content: '';
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-image: url('../../assets/img/footer/whiteLines.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&_action {
+		padding-top: 80px;
+		color: #ffffff;
+		font-size: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		& > span {
+			font-weight: bold;
+			padding-right: 20px;
+		}
+		& .btn {
+			margin-left: auto;
+		}
+	}
+
+	&_contacts {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 45px;
+		&_social {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			min-width: 290px;
+			&_item {
+				margin-right: 15px;
+				z-index: 4;
+				&_link {
+					padding: 5px;
+					font-size: 28px;
+					z-index: 5;
+					color: #fff;
+					transition: all .2s;
+					&:hover {
+						color: #0041ff;
+					}
+				}
+			}
+		}
+
+		&_phone {
+			font-size: 28px;
+			color: #ffffff;
+			&>span {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1111px) {
+	.footer {
+		&_action {
+			&>span {
+				width: 76%;
+			}
+
+			& .btn {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 879px) {
+	.footer {
+		&_action {
+			&>span {
+				width: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 746px) {
+	.footer {
+		&_action {
+			&>span {
+				margin-right: 0;
+			}
+			& .btn {
+				margin-top: 30px;
+			}
+		}
+
+		&_contacts {
+			&_social {
+				min-width: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 543px) {
+	.footer {
+		&_action {
+			padding-top: 25px;
+			font-size: 21px;
+
+			& .btn {
+				margin-top: 20px;
+			}
+
+			& .btn > a {
+				font-size: 14px;
+				width: 176px;
+				height: 46px;
+			}
+		}
+
+		&_contacts {
+			flex-wrap: wrap;
+			padding-bottom: 20px;
+			&_social {
+
+			}
+
+			&_phone {
+				font-size: 27px;
+			}
+		}
+	}
+}

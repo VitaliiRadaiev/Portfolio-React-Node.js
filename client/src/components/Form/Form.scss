@@ -1,0 +1,82 @@
+.form {
+	position: relative;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	max-width: 812px;
+	max-height: 568px;
+	border-radius: 10px;
+	padding: 0 15px;
+
+	&_name, &_email, &_message, &_btn {
+		margin-bottom: 16px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&_name {
+		margin-top: 69px;
+	}
+
+	&_message > .message {
+		height: 180px;
+		max-height: 180px;
+	}
+
+	&_btn {
+		margin-top: 55px;
+
+		& > .form-button {
+			cursor: pointer;
+			outline: none;
+			font-size: 16px;
+			letter-spacing: 0.4px;
+			text-transform: uppercase;
+			padding: 25px 41px 21px;
+			border-radius: 28px;
+			background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+			border: none;
+			color: #ffffff;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+
+	&_item {
+		padding: 16px 0 16px 20px;
+		width: 100%;
+		max-width: 517px;
+		border-radius: 10px;
+		border: 1px solid #b7c0c9;
+		outline: none;
+	}
+}
+
+.form_btn_close {
+	position: absolute;
+	top:15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+.form_btn_close:before {
+	content: '';
+	background: #3564fc;
+	position: absolute;
+	height: 2px;
+	width: 31px;
+	top:11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+.form_btn_close:after {
+	content: '';
+	background: #3564fc;
+	position: absolute;
+	height: 2px;
+	width: 31px;
+	top:11px;
+	left: -4px;
+	transform: rotate(45deg);
+}
