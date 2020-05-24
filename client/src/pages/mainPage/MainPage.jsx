@@ -7,6 +7,7 @@ import Works from '../../components/Works/Works';
 import Footer from '../../components/Footer/Footer';
 import Modal from '../../components/Modal/Modal';
 import Form from '../../components/Form/Form';
+import Banner from '../../components/Banner/Banner'; 
 
 class MainPage extends React.Component {
 	constructor(props) {
@@ -37,6 +38,7 @@ class MainPage extends React.Component {
 			<>
 			{modal}
 			<Header handleShow={this.handleShow}/>
+      <Banner />
 			<AboutMe />
 			<ExpertIn />
 			<Works />
